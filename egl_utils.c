@@ -171,7 +171,7 @@ void init_ogl(gl_t *state, render_t *render_state)
 
     // Open input event
     state->controller_1_fd = open("/dev/input/event0",O_RDONLY|O_NONBLOCK);
-    state->controller_2_fd = open("/dev/input/event1",O_RDONLY|O_NONBLOCK);
+    state->controller_2_fd = open("/dev/input/event4",O_RDONLY|O_NONBLOCK);
 }
 
 void swap_ogl(gl_t *state)
